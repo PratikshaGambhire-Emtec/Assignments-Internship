@@ -139,3 +139,5 @@ SELECT * FROM Title
 SELECT Department_Id, SUM(Salary) FROM Employee GROUP BY Department_Id;
 
 --Select only those Departments where sum of Salary is greater than 500000
+SELECT Department_Id, SUM(Salary) FROM Employee GROUP BY Department_Id
+WHERE SUM(Salary)>500000;
