@@ -5,70 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>   
-<div id="header"></div>
+  <div class=" main"></div>
 
-<div class="left">
-    <img src="women.jfif" height="150px" width="150px">
-    <div>
-    </div>
-</div> 
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Projects
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="projects/first.html">FoodMood Application</a>
+          <a href="projects/second.html">Augmented Reality Application</a>
+          <a href="projects/third.html">Inventory Management System</a>
+        </div>
+      </div>
+
+      <input type="text" placeholder="Search..">
+     </div>
+
+
+     
 
 <div class="left"></div>
 <div class="stuff">
   <br><br>
   <h1>Portfolio</h1>
+  <div class="left">
+    <img id="image" src="images/Pratiksha.png" height="150px" width="150px">
+</div> 
   <h2>Pratiksha Gambhire.</h2>
+  <p id="para">Highly enthusiastic who is ready to learn and adapt new skills and technologies <br>
+    without deciding or staying at one field or one path more simply I can say about <br>
+     me is rather than Static, I'm Dynamic as a learner. </p>
   <hr />
   <br>
 
-  <p class="head"><b>Interests</b></p>
-  <ul>
-    <li>Drawing</li>
-    <li>Photography</li>
-    <li>Design</li>
-    <li>Programming</li>
-    <li>Computer Science</li>
-  </ul>
+  <div class="Middle">
+    <ul>
+        <a href="https://www.linkedin.com/in/pratiksha-gambhire-1446ba160">
+            <li> My LinkedIN </li>
+          </a>
 
+         <a href="https://www.instagram.com/prati4786/">
+             <li> My Instagram </li> 
+            </a>
 
-  <p class="head"><b>Skills</b></p>
-  <ul>
-    <li>Web Design with HTML & CSS</li>
-    <li>Android Application Development</li>
-  </ul>
-
-
-  <p class="head"><b>Has done education from :</b></p>
-  <ul>
-
-    <a href="https://www.ritindia.edu/">
-      <li>Rajarambapu Institute of Technology</li>
-    </a>
-    
-    <a href="https://www.sss.ac.in/">
-      <li>Sangli shikshan sanstha</li>
-    </a>
-    
-  </ul>
-
-  <p class="head"><b>Experienced of</b></p>
-  <ul>
-    <li>Designing and Marketing</li>
-    <li>Content Writing</li>
-    <li>People Management</li>
-    <li>Operation Management </li>
-  </ul>
-
-  <p class="head"><b>Extracurriculars</b></p>
-  <ul>
-    <li>Recycling </li>
-    <li>Media Cell</li>
-    <li>Space Club</li>
-    <li>Book reading competitions</li>
-  </ul>
+        <li><a href="Education.html" >My Educational Details</a></li>
+        
+        <li><a href="AboutMe.html" >AboutME</a></li>
+            
+    </ul>
 </div>
+
+<!--Right box for buttons-->
+<div class="right">
+
+
+<a href="ContactMe.html">
+    <button>Contact Me</button>
+  </a>
+  
+<br> <br>
+
+</div>
+</div>
+
+
 </body>
 </html>
