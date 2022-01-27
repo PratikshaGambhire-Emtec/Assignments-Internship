@@ -7,7 +7,7 @@ body {
     background-image: url(images/pink.jpg);
     font-family: sans-serif;
   }
-/* display flex makes sure that all the direct children inside a container element div are displayed side-by-side by default. */
+
 .sign{
     display: flex;
     justify-content: center;
@@ -30,7 +30,7 @@ body {
     margin-bottom: 50px;
     color: #b82f7f;
   }
-/*  position relative is positioned relative to its normal position. */
+
   .inputContainer {
     position: relative;
     height: 45px;
@@ -38,7 +38,7 @@ body {
     margin-bottom: 17px;
     
   }
-/* position absolute is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). */
+
   .input {
     position: absolute;
     top: 0px;
