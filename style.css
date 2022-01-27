@@ -1,3 +1,36 @@
+.bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+  }
+
+  .bg img {
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+  }
+  
+  .bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  }
+  
+  .bio h1 {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+  }
+
+
 /* Add a black background color to the top navigation bar */
 .topnav {
     overflow: hidden;
@@ -105,18 +138,23 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
 
 button:hover{
-    background-color: brown;
+    background-color: rgb(243, 50, 130);
     text-shadow: chartreuse;
     cursor: pointer;
-    font-size: 28px;
+    font-size: 25px;
     font-family: Georgia;
 }
 
 .Middle:hover {
  background-color: #e0eeee;
+ font-size: xx-large ;
+ color: white;
  cursor: pointer;
   }
 
@@ -130,16 +168,13 @@ button:hover{
     background-color: rgb(242, 248, 228);
 }
 
-tbody > tr:nth-child(odd){
-    background-color:rgb(158, 160, 158) ;
-}
 
 .edu:hover{
     background-color: cornsilk;
 }
 
 body {
-    background-image: url(images/pink.jpg);;
+    background-image: url(images/pink.jpg);
   }
 
   p#para::first-letter{
@@ -149,9 +184,23 @@ body {
 
 h1{
     font-size: xx-large;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#firsthead{
+    padding-left: 645px;
+    font-size: 65px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: purple;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
 h2{
     font-style: oblique;
     background-color: whitesmoke;
@@ -160,6 +209,21 @@ h2{
     font-family: 'Roboto Slab', serif;
     
 }
+
+.mid{
+    margin-left: 680px;
+    margin-bottom: 200px;
+}
+
+    .edu{
+        margin-left: 550px;
+        margin-right: 550px;
+    }
+    
+    .tab{
+        margin-left: 450px;
+    }
+
 
 .intro {
     height: auto;
@@ -186,7 +250,7 @@ h2{
 .education {
     height: auto;
     width: auto;
-    margin-left: 250px;
+    margin-left: 45px;
 }
 
 .skills-main {
@@ -210,3 +274,96 @@ h2{
     margin-left: 250px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.container2
+{
+width: 95%;
+height: auto;
+padding: 10px;
+margin: 80px auto;
+display: flex ;
+justify-content: center;
+}
+.box
+{
+width: 380px;
+height: 700px;
+background:  rgb(240, 104, 126);
+margin: 0px 10px;
+transition: 1s;
+}
+.box:hover
+{
+transform: scale(1.1);
+background:  rgb(201, 85, 105);
+box-shadow: 2px 2px 2px #000;
+z-index: 2;
+}
+.box-img img
+{height: 110px;
+width: 110px;
+background-size: cover;
+background-position: center;
+border-radius: 50px;
+transform: translate(-50%,-50%);
+position: relative;
+margin-top: 30%;
+margin-left: 50%;
+}
+.box-text
+{
+padding: 10px;
+margin: 5px;
+}
+.box-text h2
+{
+font-size: 20px;
+margin-left: 25%;
+margin-bottom: 30px;
+color:black;
+}
+.box-text p
+{
+line-height: 22px;
+font-size: 16px;
+margin-left: 20px;
+margin-bottom: 12px;
+color:black;
+}
+.box-text a
+{
+background: rgb(248, 216, 221);
+color: rgb(34, 25, 25);
+padding: 7px 15px;
+display: inline-block;
+text-decoration: none;
+text-transform: capitalize;
+position: relative;
+margin-top: 10% ;
+margin-left: 35% ;
+}
+.box-text a:hover
+{
+background-color:rgb(94, 85, 86);
+color: whitesmoke;
+font :bold;}
+ */

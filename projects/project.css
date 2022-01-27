@@ -1,24 +1,41 @@
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-    margin: auto;
+
+
+body {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font: 500 100%/1.5 system-ui;
+  background-image: url(pink.jpg);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 650px) {
+  body {
+    display: block;
+    font-size: 80%;
   }
 
-  .bio {
-    width: 25rem;
-    padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  p {
+    position: relative;
+    margin: -3rem 0 2rem 1rem;
+    padding: 1rem;
+    background: rgba(white, 0.8);
   }
-  
-  .bio h1 {
-    margin-bottom: var(--bottom-margin);
-  }
-  
-  .bio p {
-    line-height: var(--line-height);
-    padding: 0.3rem 0;
-  }
+}
+
+ul{
+  list-style: lower-roman;
+}
+
+h2{
+  font-size: 35px;
+  font-family: fantasy;
+  color: aliceblue;
+}
