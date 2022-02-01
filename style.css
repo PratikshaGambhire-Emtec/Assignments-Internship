@@ -1,3 +1,115 @@
+/*Commom CSS*/
+
+body {
+  background-image: url(images/pink.jpg);
+}
+
+h2{
+  font-style: oblique;
+  background-color: whitesmoke;
+}
+* {
+  font-family: 'Roboto Slab', serif;
+  
+}
+p#para::first-letter{
+  font-size: 30px;
+  color: rgb(49, 48, 48)
+}
+
+h1{
+  font-size: xx-large;
+  /* background-color: whitesmoke; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*Portfolio page*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  margin-block-start: auto;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #2196F3;
+  color: white;
+}
+
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+
+.topnav input[type=text] {
+  float: right;
+  padding: 12px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 20px 24px;
+  background-color: inherit;
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:  #2196F3;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+} 
+
+.dropdown-content a:hover {
+  background-color: #2196F3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Main content*/
 .bg {
     display: flex;
     align-items: center;
@@ -5,6 +117,8 @@
     gap: 2.5rem;
     max-width: 68.75rem;
     margin: auto;
+    /* border: 2px solid black;
+    padding: 40px 40px 40px 40px; */
   }
 
   .bg img {
@@ -13,175 +127,23 @@
     height: 30%;
     object-fit: cover;
   }
-  
-  .bio {
-    width: 25rem;
-    padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-  }
-  
-  .bio h1 {
-    margin-bottom: var(--bottom-margin);
-  }
-  
-  .bio p {
-    line-height: var(--line-height);
-    padding: 0.3rem 0;
+  .bio-title{
+    font-size: 35px;
   }
 
+  .bio-text{
 
-
-.topnav {
-    overflow: hidden;
-    background-color: #e9e9e9;
-    
-  }
-  
-
-  .topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 20px 24px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
- 
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-
-  .topnav a.active {
-    background-color: #2196F3;
-    color: white;
-  }
-  
-  
-  .topnav input[type=text] {
-    float: right;
-    padding: 12px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-  }
-  @media screen and (max-width: 600px) {
-    .topnav a, .topnav input[type=text] {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
-    }
-    .topnav input[type=text] {
-      border: 1px solid #ccc;
-    }
-  }
-.dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: black;
-    padding: 20px 24px;
-    background-color: inherit;
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-  
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color:  #2196F3;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  th, td {
-    padding: 15px;
-    text-align: left;
+    font-size: 28px;
+    font-family:  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
-button:hover{
+  button:hover{
     background-color: rgb(243, 50, 130);
-    text-shadow: chartreuse;
     cursor: pointer;
     font-size: 25px;
     font-family: Georgia;
 }
 
-.Middle:hover {
- background-color: #e0eeee;
- font-size: xx-large ;
- color: white;
- cursor: pointer;
-  }
-
-  p#para:hover{
-      background-color: wheat;
-      cursor: pointer;
-
-  }
-
-  tbody > tr:nth-child(even){
-    background-color: rgb(242, 248, 228);
-}
-
-
-.edu:hover{
-    background-color: cornsilk;
-}
-
-body {
-    background-image: url(images/pink.jpg);
-  }
-
-  p#para::first-letter{
-    font-size: 30px;
-    color: rgb(49, 48, 48)
-}
-
-h1{
-    font-size: xx-large;
-    /* background-color: whitesmoke; */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
 #firsthead{
     padding-left: 645px;
@@ -196,76 +158,75 @@ h1{
     height: 50px;
     border-radius: 50%;
   }
-h2{
-    font-style: oblique;
-    background-color: whitesmoke;
-}
-* {
-    font-family: 'Roboto Slab', serif;
-    
-}
 
 .mid{
     margin-left: 680px;
     margin-bottom: 200px;
 }
-
-    .edu{
-        margin-left: 550px;
-        margin-right: 550px;
-    }
     
-    .tab{
-        margin-left: 450px;
-    }
+
+/*Education Page*/
 
 
-.intro {
-    height: auto;
-    width: auto;
-    margin-left: 250px;
+.tab{
+  margin-left: 450px;
 }
 
-.intro h1 {
-    margin-top: 40px;
+
+th, td {
+  padding: 15px;
+  text-align: left;
 }
 
-.intro p {
-    font-size: 18px;
-    padding-right: 30px;
+.container2
+{
+width: 95%;
+height: auto;
+padding: 10px;
+margin: 80px auto;
+display: flex ;
+justify-content: center;
+}
+.box
+{
+width: 350px;
+height: 500px;
+background:  rgb(247, 208, 214);
+margin: 0px 10px;
+transition: 1s;
+}
+.box:hover
+{
+background:  rgb(255, 177, 190);
+z-index: 2;
+}
+.box-img img
+{height: 110px;
+width: 110px;
+background-size: cover;
+background-position: center;
+border-radius: 50px;
+transform: translate(-50%,-50%);
+position: relative;
+margin-top: 30%;
+margin-left: 50%;
+}
+.box-text
+{
+padding: 10px;
+margin: 5px;
+}
+.box-text h2
+{
+font-size: 28px;
+margin-left: 25%;
+margin-bottom: 30px;
+color:black;
+font-family: Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.work {
-    height: auto;
-    width: auto;
-    margin-top: 30px;
-    margin-left: 250px;
-}
-
-.education {
-    height: auto;
-    width: auto;
-    margin-left: 45px;
-}
-
-.skills-main {
-    height: auto;
-    width: auto;
-    margin-left: 250px;
-}
-
-.skills {
-    height: auto;
-    width: auto;
-    margin-left: 250px;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #D9E4EC;
-}
-
-.achievements {
-    height: auto;
-    width: auto;
-    margin-left: 250px;
+.tab:hover{
+  background: rgb(255, 177, 190);
+  z-index: 1;
 }
 
